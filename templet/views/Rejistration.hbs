@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{!-- <link rel="stylesheet" href="style.css" /> --}}
+  <title>Form</title>
+  {{>heder}}
+</head>
+
+<body>
+  {{>navbar}}
+   
+  <div class="login-wrap">
+   
+    <div class="login-html">
+      {{!-- <input id="tab-1" type="radio" name="tab" class="sign-in" ><label for="tab-1" class="tab">Sign In</label> --}}
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+      <div class="login-form">
+     
+        <form action="/Rejistration" method="post">
+        <div class="sign-up-htm">
+          <div class="group">
+            <label for="user" class="label" >Username</label>
+            <input id="user" type="text" class="input" name="Username">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Phone </label>
+            <input id="pass" type="number" class="input" name="phone">
+          </div>
+           <div class="group">
+            <label for="pass" class="label">Your age</label>
+            <input id="pass" type="number" class="input" name="yourage">
+          </div>
+           <div class="group">
+            <label for="pass" class="label">Email Address</label>
+            <input id="pass" type="text" class="input" name="EmailAddress">
+          </div>
+          <div class="group">
+            <label for="pass" class="label" >Password</label>
+            <input id="pass" type="password" class="input" data-type="password" name="Password">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Repeat Password</label>
+            <input id="pass" type="password" class="input" data-type="password" name="RepeatPassword">
+          </div>
+         
+           
+          <div class="group">
+            <input type="submit" class="button" value="Sign Up">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <label for="tab-1">Already Member?</a>
+          </div>
+        </form></div>
+      </div>
+    </div>
+     </div>
+     
+</body>
+
+</html>
